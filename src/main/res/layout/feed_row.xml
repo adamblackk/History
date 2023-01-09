@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_anchorGravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="0dp"
+    android:layout_margin="15dp"
+    android:elevation="10dp"
+    android:background="#A1F4F6B5"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/feedLinearLayaut"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+
+
+        >
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/feedImageRow"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_weight="@android:integer/config_longAnimTime"
+
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+        <TextView
+            android:id="@+id/kindText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kind"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#2CCEE3DA"
+
+            >
+
+        </TextView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/likeImage"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                android:layout_margin="5dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/bookmarkImage"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:src="@drawable/bookmark"
+                android:layout_marginRight="30dp"
+                android:focusable="true"
+
+
+                >
+
+
+            </ImageView>
+
+            <ImageView
+               android:id="@+id/shareImage"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_share_24"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                >
+
+            </ImageView>
+
+
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/feedTitleRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:text="TITLE"
+            android:textSize="23dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/feedTitleBriefRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="brief details"
+            android:textSize="18dp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

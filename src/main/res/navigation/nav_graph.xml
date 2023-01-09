@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.adamblack.historyofempire.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment2"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kindsFragment"
+        android:name="com.adamblack.historyofempire.fragment.KindsFragment"
+        android:label="fragment_kinds"
+        tools:layout="@layout/fragment_kinds" >
+        <action
+            android:id="@+id/action_kindsFragment_to_kindsDetailFragment2"
+            app:destination="@id/kindsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.adamblack.historyofempire.fragment.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.adamblack.historyofempire.fragment.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.adamblack.historyofempire.fragment.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kindsDetailFragment"
+        android:name="com.adamblack.historyofempire.fragment.KindsDetailFragment"
+        android:label="fragment_kinds_detail"
+        tools:layout="@layout/fragment_kinds_detail" >
+        <action
+            android:id="@+id/action_kindsDetailFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+</navigation>
